@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace Part_1_3_assignment
 {
+
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string name;
+            int age;
+            double height;
+
+            name = txtName.Text;
+            age = Convert.ToInt32(txtAge.Text);
+            height = Convert.ToDouble(txtHeight.Text);
+
+            greetingMessage.Text = "Hello " + name + " you are " + (2.72 - height) + "m shorter than the tallest person and " + (82 - age) + " years below the average life expectancy.";
+        }
+
+     
     }
 }
