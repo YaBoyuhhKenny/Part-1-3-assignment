@@ -30,12 +30,13 @@
         {
             this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtAge = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtHeight = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
             this.greetingMessage = new System.Windows.Forms.Label();
+            this.ageUpDown = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.ageUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // txtName
@@ -53,13 +54,6 @@
             this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Enter your name.";
-            // 
-            // txtAge
-            // 
-            this.txtAge.Location = new System.Drawing.Point(61, 154);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(99, 20);
-            this.txtAge.TabIndex = 2;
             // 
             // label2
             // 
@@ -104,22 +98,35 @@
             this.greetingMessage.Size = new System.Drawing.Size(0, 13);
             this.greetingMessage.TabIndex = 7;
             // 
+            // ageUpDown
+            // 
+            this.ageUpDown.Location = new System.Drawing.Point(61, 152);
+            this.ageUpDown.Maximum = new decimal(new int[] {
+            82,
+            0,
+            0,
+            0});
+            this.ageUpDown.Name = "ageUpDown";
+            this.ageUpDown.Size = new System.Drawing.Size(38, 20);
+            this.ageUpDown.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 442);
+            this.Controls.Add(this.ageUpDown);
             this.Controls.Add(this.greetingMessage);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtHeight);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtAge);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtName);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.ageUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,12 +136,12 @@
 
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtHeight;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button submit;
         private System.Windows.Forms.Label greetingMessage;
+        private System.Windows.Forms.NumericUpDown ageUpDown;
     }
 }
 

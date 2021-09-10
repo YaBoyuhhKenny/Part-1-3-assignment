@@ -25,7 +25,7 @@ namespace Part_1_3_assignment
             double height;
 
             name = txtName.Text;
-            age = Convert.ToInt32(txtAge.Text);
+            age = (int)ageUpDown.Value;
             height = Convert.ToDouble(txtHeight.Text);
 
             greetingMessage.Text = "Hello " + name + " you are " + (2.72 - height) + "m shorter than the tallest person and " + (82 - age) + " years below the average life expectancy.";
